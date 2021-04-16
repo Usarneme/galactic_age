@@ -28,4 +28,9 @@ describe("LifeExpectancy", () => {
   test("LE should have a method to calculate years remaining", () => {
     expect(myLifeExpectancy.yearsRemaining).toBeDefined()
   })
+
+  test("LE.yearsRemaining func should return 82.4 years for a newborn (0 age)", () => {
+    const babyLifeExpectancy = new LifeExpectancy(0)
+    expect(babyLifeExpectancy.yearsRemaining()).toEqual(yearsRemainingMockData["0"])
+  })
 })
