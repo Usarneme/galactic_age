@@ -18,13 +18,16 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'TITLE',
       template: './src/index.html',
       inject: 'body'
     })
   ],
   module: {
     rules: [
+      {
+        test: /\.(png|jpg|gif|ico)$/i,
+        type: 'asset/resource'
+      },
       {
         test: /\.css$/,
         use: [

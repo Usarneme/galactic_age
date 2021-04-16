@@ -1,0 +1,42 @@
+:root, * {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body * {
+  font-size: 1.8rem;
+  color: #eee;
+}
+
+a {
+  color: unset;
+  text-decoration: underline;
+}
+
+.container, .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('../images/space.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.date-container {
+  background: rgba(255,255,255,0.15);
+}
+
+label, input {
+  border: none;
+}
+
+input {
+  background: rgba(255,255,255,0.05);
+  border-bottom: 2px solid #eee;
+}
