@@ -10,4 +10,6 @@ export default class GalacticAge {
   ageOnVenus() {
     return this.earthAge / 0.62
   }
+
+  ageOnMars() {}
 }
