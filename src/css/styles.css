@@ -50,19 +50,19 @@ input {
 }
 
 .mercury {
-  background: url('../images/mercury.jpg');
+  background: url('../images/mercury.png');
 }
 
 .venus {
-  background: url('../images/venus.jpg');
+  background: url('../images/venus.png');
 }
 
 .mars {
-  background: url('../images/mars.jpg');
+  background: url('../images/mars.png');
 }
 
 .jupiter {
-  background: url('../images/jupiter.jpg');
+  background: url('../images/jupiter.png');
 }
 
 .mercury, .venus, .mars, .jupiter {
