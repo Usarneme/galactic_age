@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>How Many Sols?</title>
+  <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+  <section class="main">
+    <div class="container-fluid outer">
+      <div class="container-fluid">
+        <div class="m-0 mb-5 p-2 fixed-top date-container">
+          <label for="datepicker">What is your date of birth on Earth?</label>
+          <input class="datepicker" id="datepicker" type="date">
+          <div class="age"></div>
+        </div>
+      </div>
+      <div class="container galactic-age-container text-center">
+        <h2 class="galactic-age"></h2>
+      </div>
+      <div class="warning">
+        <div class="alert p-2 alert-dismissible fade show" role="alert">
+          <strong>Forgot Age On Earth!</strong> Please input your date of birth.
+          <button type="button" id="close-warning" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <header class="text-uppercase text-center">
+        <h1>Select Another Planet To See Your Age And Life Expectancy</h1>
+      </header>
+      <div class="container-fluid row p-s-2 p-m-5 planets">
+        <div class="col mercury-container">
+          <div class="container planet-stats p-3 pt-5 pb-5 text-center">
+            <div class="mercury"></div>
+            <h2 class="pb-2">Mercury</h2>
+            <p>Mercury is the smallest planet in our solar system—only slightly larger than Earth's Moon. It is the closest planet to the Sun at a distance of about 36 million miles (58 million kilometers) or 0.39 AU.</p>
+          </div>
+        </div>
+        <div class="col venus-container">
+          <div class="container planet-stats p-3 pt-5 pb-5 text-center">
+            <div class="venus"></div>
+            <h2 class="pb-2">Venus</h2>
+            <p>Venus is the second closest planet to the sun at a distance of about 67 million miles (108 million km). One day on Venus lasts 243 Earth days because Venus spins backwards, with its sun rising in the west and setting in the east.</p>
+          </div>
+        </div>
+        <div class="col mars-container">
+          <div class="container planet-stats p-3 pt-5 pb-5 text-center">
+            <div class="mars"></div>
+            <h2 class="pb-2">Mars</h2>
+            <p>Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.</p>
+          </div>
+        </div>
+        <div class="col jupiter-container">
+          <div class="container planet-stats p-3 pt-5 pb-5 text-center">
+            <div class="jupiter"></div>
+            <h2 class="pb-2">Jupiter</h2>
+            <p>Eleven Earths could fit across Jupiter’s equator. If Earth were the size of a grape, Jupiter would be the size of a basketball. Jupiter rotates once about every 10 hours (a Jovian day), but takes about 12 Earth years to complete one orbit of the Sun (a Jovian year).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="p-3 credits">
+      <p>Background Space Photo by <a href="https://unsplash.com/@maxmckinnon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max McKinnon</a> on <a href="https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+      <p>All other images and planet info text thanks to <a href="https://www.jpl.nasa.gov/">JPL and NASA.</a></p>
+    </footer>
+  </section>
+<script defer src="bundle.js"></script></body>
+</html>
