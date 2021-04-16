@@ -8,24 +8,63 @@ body * {
   color: #eee;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 130vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
 a {
   color: unset;
   text-decoration: underline;
+}
+
+p {
+  text-shadow: 2px 2px #111;
 }
 
 .container, .container-fluid {
   padding: 0;
 }
 
+header {
+  padding: 6rem 0;
+}
+
 .main {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  flex: 1 0 auto;
+}
+
+.outer {
   background: url('../images/space.jpg');
-  background-position: center;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100%;
+  margin-bottom: -100px;
 }
+
+/* @media all and (min-width: 768px) {
+  .main {
+    min-height: 140vh;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .main {
+    min-height: 120vh;
+  }
+} */
 
 .date-container {
   background: rgba(255,255,255,0.15);
@@ -40,13 +79,16 @@ input {
   border-bottom: 2px solid #eee;
 }
 
-.age {
+.warning {
+  display: none;
+  padding-top: 60px;
+}
+
+.galactic-age-container {
+  padding-top: 100px;
   display: none;
 }
 
-.warning {
-  display: none;
-}
 
 .alert {
   background: rgba(255,255,255,0.15);
@@ -54,6 +96,7 @@ input {
   margin: 1rem;
   padding: 0.5rem;
   margin-left: 0;
+  display: block;
 }
 
 .mercury-container, .venus-container, .mars-container, .jupiter-container {
@@ -85,10 +128,14 @@ input {
 
 .mercury, .venus, .mars, .jupiter {
   height: 100%;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.planet-stats {
+  height: 100%;
+  padding: 100px 0;
 }
 
 footer,
