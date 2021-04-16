@@ -6,6 +6,11 @@ describe("LifeExpectancy", () => {
   })
   const age = 15
   let myLifeExpectancy
+  const yearsRemainingMockData = {
+    "0": 82.4,
+    "10": 72.8,
+    "80": 10.2
+  }
 
   beforeEach(() => {
     myLifeExpectancy = new LifeExpectancy(age)
