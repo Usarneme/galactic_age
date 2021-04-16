@@ -49,6 +49,12 @@ input {
   width: 200px;
 }
 
+.mercury:hover, .venus:hover, .mars:hover, .jupiter:hover {
+  transform: scale(1.15);
+  transition: all 0.35s ease-out;
+  cursor: pointer;
+}
+
 .mercury {
   background: url('../images/mercury.png');
 }

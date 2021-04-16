@@ -2,14 +2,24 @@ import $ from 'jquery'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/styles.css'
+import GalacticAge from './GalacticAge'
 
-// $("section").text("TEST TEXT INPUT")
-console.log($)
 let age
+let myGalacticAge
+function updateAge(event) {
+  age = (Date.now() - event.target.valueAsNumber) / 1000 / 60 / 60 / 24 / 365.25
+  myGalacticAge = new GalacticAge(age)
+  $(".age").text(`You are approximately ${myGalacticAge.earthAge.toFixed(2)} years old on Earth.`).show()
+}
 
 $("#datepicker").on("change", event => {
-  console.log("date change",event.target.valueAsNumber)
-  age = (Date.now() - event.target.valueAsNumber) / 1000 / 60 / 60 / 24 / 365.25
-  console.log(age)
-  $(".age").text(`You are approximately ${age.toFixed(2)} years old on Earth.`).show()
+  if (event && event.target && event.target.valueAsNumber && !isNaN(event.target.valueAsNumber)) updateAge(event)
+})
+
+$("#datepicker").on("blur", event => {
+  if (event && event.target && event.target.valueAsNumber && !isNaN(event.target.valueAsNumber)) updateAge(event)
+})
+
+$("#datepicker").on("focus", event => {
+  if (event && event.target && event.target.valueAsNumber && !isNaN(event.target.valueAsNumber)) updateAge(event)
 })
