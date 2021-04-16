@@ -5,8 +5,16 @@ describe("Galactic Age", () => {
     expect(true).toEqual(true)
   })
 
+  let myGalacticAge
+  beforeEach(() => {
+    myGalacticAge = new GalacticAge()
+  })
+
   test("GalacticAge class should construct an object", () => {
-    const myGalacticAge = new GalacticAge()
     expect(myGalacticAge).toBeDefined()
+  })
+
+  test("GA should contain a method to determine age on Mercury", () => {
+    expect(myGalacticAge.ageOnMercury).toBeDefined()
   })
 })
