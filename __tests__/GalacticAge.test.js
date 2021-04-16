@@ -6,9 +6,9 @@ describe("Galactic Age", () => {
   })
 
   let myGalacticAge
-  const yearsOld = 100
+  const earthAge = 100
   beforeEach(() => {
-    myGalacticAge = new GalacticAge(yearsOld)
+    myGalacticAge = new GalacticAge(earthAge)
   })
 
   test("GalacticAge class should construct an object", () => {
@@ -20,7 +20,7 @@ describe("Galactic Age", () => {
   })
 
   test("GA.ageOnMercury should return their correct age on that planet", () => {
-    expect(myGalacticAge.ageOnMercury()).toEqual(yearsOld/.24)
+    expect(myGalacticAge.ageOnMercury()).toEqual(earthAge/.24)
   })
 
   test("GA should contain a method to determine age on Venus", () => {
@@ -28,6 +28,11 @@ describe("Galactic Age", () => {
   })
 
   test("GA.ageOnVenus should return their correct age on that planet", () => {
-    expect(myGalacticAge.ageOnVenus()).toEqual(yearsOld/.62)
+    expect(myGalacticAge.ageOnVenus()).toEqual(earthAge/.62)
   })
+
+  test("GA should contain a method to determine age on Mars", () => {
+    expect(myGalacticAge.ageOnMars).toBeDefined()
+  })
+
 })
