@@ -7,5 +7,7 @@ export default class GalacticAge {
     return this.earthAge / 0.24
   }
 
-  ageOnVenus() {}
+  ageOnVenus() {
+    return this.earthAge / 0.62
+  }
 }
