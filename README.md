@@ -23,7 +23,7 @@ This project is a web application that will tell you your age on one of several 
 
 ### Project Build Available At:
 
-[http://usarneme.github.io/galactic_age](http://usarneme.github.io/galactic_age)
+[https://usarneme.github.io/galactic_age](https://usarneme.github.io/galactic_age)
 
 ---
 ### Installation Instructions
@@ -53,6 +53,8 @@ View Test Results from Project Directory by Running `yarn run test` or if you pr
 <br />
 
 Life Expectancy Values by Age; thanks to Fidelity Insurance. Source: [http://personal.fidelity.com/products/retirement/inheritedira/lifeexptable.html](http://personal.fidelity.com/products/retirement/inheritedira/lifeexptable.html)
+
+Image sources are attributed in the html file and displayed on the rendered website. 
 
 <br />
 <br />
