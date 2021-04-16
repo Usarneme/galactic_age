@@ -22,4 +22,8 @@ describe("Galactic Age", () => {
   test("GA.ageOnMercury should return their correct age on that planet", () => {
     expect(myGalacticAge.ageOnMercury()).toEqual(yearsOld/.24)
   })
+
+  test("GA should contain a method to determine age on Venus", () => {
+    expect(myGalacticAge.ageOnVenus).toBeDefined()
+  })
 })
