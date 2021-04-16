@@ -4,6 +4,6 @@ export default class GalacticAge {
   }
 
   ageOnMercury() {
-
+    return this.earthAge / 0.24
   }
 }
