@@ -33,4 +33,14 @@ describe("LifeExpectancy", () => {
     const babyLifeExpectancy = new LifeExpectancy(0)
     expect(babyLifeExpectancy.yearsRemaining()).toEqual(yearsRemainingMockData["0"])
   })
+
+  test("LE.yearsRemaining func should return 72.8 years for a 10 year old", () => {
+    const babyLifeExpectancy = new LifeExpectancy(10)
+    expect(babyLifeExpectancy.yearsRemaining()).toEqual(yearsRemainingMockData["10"])
+  })
+
+  test("LE.yearsRemaining func should return 10.2 years for an 80 year old", () => {
+    const babyLifeExpectancy = new LifeExpectancy(80)
+    expect(babyLifeExpectancy.yearsRemaining()).toEqual(yearsRemainingMockData["80"])
+  })
 })
