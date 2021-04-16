@@ -35,4 +35,8 @@ describe("Galactic Age", () => {
     expect(myGalacticAge.ageOnMars).toBeDefined()
   })
 
+  test("GA.ageOnMars should return their correct age on that planet", () => {
+    expect(myGalacticAge.ageOnMars()).toEqual(earthAge/1.88)
+  })
+
 })
