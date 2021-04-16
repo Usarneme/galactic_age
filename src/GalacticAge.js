@@ -15,5 +15,7 @@ export default class GalacticAge {
     return this.earthAge / 1.88
   }
 
-  ageOnJupiter() {}
+  ageOnJupiter() {
+    return this.earthAge / 11.86
+  }
 }
