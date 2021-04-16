@@ -1,3 +1,5 @@
+import GalacticAge from "../src/GalacticAge"
+
 describe("Galactic Age", () => {
   test("sanity check", () => {
     expect(true).toEqual(true)
