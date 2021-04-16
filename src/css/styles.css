@@ -14,7 +14,6 @@ a {
 }
 
 .container, .container-fluid {
-  margin: 0;
   padding: 0;
 }
 
@@ -39,4 +38,43 @@ label, input {
 input {
   background: rgba(255,255,255,0.05);
   border-bottom: 2px solid #eee;
+}
+
+.age {
+  display: none;
+}
+
+.mercury-container, .venus-container, .mars-container, .jupiter-container {
+  height: 200px;
+  width: 200px;
+}
+
+.mercury {
+  background: url('../images/mercury.jpg');
+}
+
+.venus {
+  background: url('../images/venus.jpg');
+}
+
+.mars {
+  background: url('../images/mars.jpg');
+}
+
+.jupiter {
+  background: url('../images/jupiter.jpg');
+}
+
+.mercury, .venus, .mars, .jupiter {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer,
+footer > * {
+  margin: 0;
+  padding: 0;
 }

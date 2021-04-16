@@ -5,16 +5,37 @@
   <link rel="icon" href="./images/favicon.ico">
 </head>
 <body>
-  <section class="main">
+  <section class="main container-fluid">
     <div class="container-fluid">
       <div class="m-0 p-2 float-left date-container">
         <label for="datepicker">What is your date of birth on Earth?</label>
         <input class="datepicker" id="datepicker" type="date">
+        <div class="age"></div>
       </div>
     </div>
-    <div class="container fixed-bottom pl-3 credits">
-      <p>Background Space Photo by <a href="https://unsplash.com/@maxmckinnon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max McKinnon</a> on <a href="https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-      <p>All other images thanks to <a href="https://www.jpl.nasa.gov/">JPL and NASA.</a></p>
+    <div class="clearfix"></div>
+    <header class="container p-5 text-uppercase text-center">
+      <h2>Select Another Planet To See Your Age And Life Expectancy</h2>
+    </header>
+    <div class="container-fluid row planets">
+      <div class="col mercury-container">
+        <div class="mercury"></div>
+      </div>
+      <div class="col venus-container">
+        <div class="venus"></div>
+      </div>
+      <div class="col mars-container">
+        <div class="mars"></div>
+      </div>
+      <div class="col jupiter-container">
+        <div class="jupiter"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <footer class="p-3 fixed-bottom credits">
+        <p>Background Space Photo by <a href="https://unsplash.com/@maxmckinnon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max McKinnon</a> on <a href="https://unsplash.com/s/photos/solar-system?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        <p>All other images thanks to <a href="https://www.jpl.nasa.gov/">JPL and NASA.</a></p>
+      </footer>
     </div>
   </section>
 </body>
