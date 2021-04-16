@@ -1,11 +1,14 @@
-# PROJECT NAME
+# Galactic Age Calculator
 ## By Usarneme/Tom
 
 ---
 
 ### Project Description
 
-This project is a web application that DESCRIPTION
+<p>
+This project is a web application that will tell you your age on one of several planets in our solar system. It also includes functionality to tell you your life expectancy/years remaining depending on your current age (in years for the chosen planet).
+</p>
+
 ---
 ### Tech Stack
 1. HTML5+CSS3
@@ -20,12 +23,12 @@ This project is a web application that DESCRIPTION
 
 ### Project Build Available At:
 
-[BUILD URL](BUILD URL)
+[http://usarneme.github.io/galactic_age](http://usarneme.github.io/galactic_age)
 
 ---
 ### Installation Instructions
-1. Clone this repo: `git clone https://github.com/Usarneme/REPO URL`
-2. Enter new directory `cd REPO DIR`
+1. Clone this repo: `git clone https://github.com/Usarneme/galactic_age`
+2. Enter new directory `cd galactic_age/`
 3. Install dependencies with `npm install`
 4. To run it locally, use the npm dev command `npm run start:dev`
 5. Open your web browser and navigate to http://localhost:9001
@@ -37,12 +40,10 @@ This project is a web application that DESCRIPTION
 ---
 ### Test Suite/Specification
 
-> See also [the Jest Test File](TESTSURL) for Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
+See [the Jest Test Directory](./__tests__) for Jest Test Suites which includes 17 passing tests.
 
-```
-Describe: TESTS
+View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
 
-```
 ---
 ### License is GPLv3 and I make no claim to copyright.
 <br />
@@ -50,10 +51,14 @@ Describe: TESTS
 > You can't steal what is freely given. Enjoy!
 
 <br />
+
+Life Expectancy Values by Age; thanks to Fidelity Insurance. Source: [http://personal.fidelity.com/products/retirement/inheritedira/lifeexptable.html](http://personal.fidelity.com/products/retirement/inheritedira/lifeexptable.html)
+
 <br />
-Life Expectancy Values by Age; thanks to Fidelity Insurance. Source: http://personal.fidelity.com/products/retirement/inheritedira/lifeexptable.html
+<br />
+<br />
 <br />
 <br />
 <p align="center">
-  <small>Made with ❤️ in Portland, Oregon. </small>
+  <small>Made with ❤️ &nbsp; in Portland, Oregon. </small>
 </p>
